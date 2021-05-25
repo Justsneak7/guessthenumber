@@ -5,14 +5,14 @@ number=random.randint(1,5)
 chances=0
 print('guess a number between 1 and 5')
 while chances <5:
-    guess=int(input('enter your guess'))
+    guess=int(input('enter your guess: '))
     if guess==number:
         print('congratulations! you win!!!!')
         break
     elif guess<number:
-        print('your guess was too low,guess a number higher than',guess)
+        print('your guess was too low,guess a number higher ',guess)
     else:
-        print('your guess was too high,guess a number lower than',guess)
+        print('your guess was too high,guess a number lower ',guess)
     chances+=1
 
 if not chances<5:
